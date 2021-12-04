@@ -1,0 +1,299 @@
+{
+  "name": "BEKOS Muse",
+  "vendorId": "0x1209",
+  "productId": "0x43AC",
+  "lighting": {
+    "extends": "qmk_rgblight",
+    "effects": [
+      ["All Off", 0],
+      ["Solid Color", 1],
+      ["Solid - Highlighted Mods", 1],
+      ["Vertical Gradient", 1],
+      ["Horizontal Gradient", 1],
+      ["Breathing", 1],
+      ["Colorband - Saturation", 1],
+      ["Colorband - Brightness", 1],
+      ["Pinwheel - Saturation", 1],
+      ["Pinwheel - Brightness", 1],
+      ["Spiral - Saturation", 1],
+      ["Spiral - Brightness", 1],
+      ["Cycle All", 0],
+      ["Cycle Horizontal", 1],
+      ["Cycle Vertical", 1],
+      ["Rainbow Chevron", 1],
+      ["Cycle - In/Out", 1],
+      ["Cycle - In/Out Dual", 1],
+      ["Cycle - Pinwheel", 1],
+      ["Cycle - Spiral", 1],
+      ["Dual Beacon", 1],
+      ["Rainbow Beacon", 1],
+      ["Rainbow Pinwheels", 1],
+      ["Raindrops", 1],
+      ["Jellybean Raindrops", 1]
+    ]
+  },
+  "customKeycodes": [
+      {"name": "Bekos Layer Fn", "title": "Bekos Function Key for switching layers", "shortName": "BKB_FN"},
+      {"name": "Bekos RGB Off", "title": "RGB Off: Disables RGB Matrix except for indicators", "shortName": "BKB_RGB_OFF"},
+      {"name": "Bekos Encoder RGB Hue", "title": "Bekos RGB Hue: Allows for adjusting hue via the encoder", "shortName": "BKB_RGB_HUE"},
+      {"name": "Bekos Encoder RGB Saturation", "title": "Bekos RGB Saturation: Allows for adjusting saturation via the encoder", "shortName": "BKB_RGB_SAT"},
+      {"name": "Bekos Encoder RGB Value", "title": "Bekos RGB Value: Allows for adjusting value via the encoder", "shortName": "BKB_RGB_VAL"},
+      {"name": "Bekos Encoder RGB Speed", "title": "Bekos RGB Speed: Allows for adjusting animation speed via the encoder", "shortName": "BKB_RGB_SPD"}
+   ],
+  "matrix": {"rows": 6, "cols": 22},
+  "layouts": {
+    "keymap": [
+      [
+        {
+          "c": "#777777"
+        },
+        "0,0",
+        {
+          "x": 1
+        },
+        "0,2",
+        "0,3",
+        "0,4",
+        "0,5",
+        {
+          "x": 0.5
+        },
+        "0,7",
+        "0,8",
+        "0,9",
+        "0,10",
+        {
+          "x": 0.5
+        },
+        "0,11",
+        "0,12",
+        "0,13",
+        "0,14",
+        {
+          "x": 0.25
+        },
+        "0,15",
+        "0,16",
+        "0,17",
+        {
+          "x": 0.25
+        },
+        "0,18",
+        "0,19",
+        "0,20",
+        "0,21"
+      ],
+      [
+        {
+          "y": 0.5,
+          "c": "#cccccc"
+        },
+        "1,0",
+        "1,1",
+        "1,2",
+        "1,3",
+        "1,4",
+        "1,5",
+        "1,6",
+        "1,7",
+        "1,8",
+        "1,9",
+        "1,10",
+        "1,11",
+        "1,12",
+        {
+          "c": "#777777",
+          "w": 2
+        },
+        "1,13",
+        {
+          "x": 0.25
+        },
+        "1,15",
+        "1,16",
+        "1,17",
+        {
+          "x": 0.25,
+          "c": "#aaaaaa"
+        },
+        "1,18",
+        {
+          "c": "#cccccc"
+        },
+        "1,19",
+        "1,20",
+        "1,21"
+      ],
+      [
+        {
+          "c": "#777777",
+          "w": 1.5
+        },
+        "2,0",
+        {
+          "c": "#cccccc"
+        },
+        "2,2",
+        "2,3",
+        "2,4",
+        "2,5",
+        "2,6",
+        "2,7",
+        "2,8",
+        "2,9",
+        "2,10",
+        "2,11",
+        "2,12",
+        "2,13",
+        {
+          "w": 1.5
+        },
+        "2,14",
+        {
+          "x": 0.25,
+          "c": "#777777"
+        },
+        "2,15",
+        "2,16",
+        "2,17",
+        {
+          "x": 0.25,
+          "c": "#cccccc"
+        },
+        "2,18",
+        "3,19",
+        "3,20",
+        {
+          "h": 2
+        },
+        "3,21"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.75
+        },
+        "3,0",
+        {
+          "c": "#cccccc"
+        },
+        "3,2",
+        "3,3",
+        "3,4",
+        "3,5",
+        "3,6",
+        "3,7",
+        "3,8",
+        "3,9",
+        "3,10",
+        "3,11",
+        "3,12",
+        {
+          "c": "#777777",
+          "w": 2.25
+        },
+        "3,13",
+        {
+          "x": 3.5,
+          "c": "#cccccc"
+        },
+        "3,18",
+        "4,19",
+        "4,20"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 2.25
+        },
+        "4,1",
+        {
+          "c": "#cccccc"
+        },
+        "4,2",
+        "4,3",
+        "4,4",
+        "4,5",
+        "4,6",
+        "4,7",
+        "4,8",
+        "4,9",
+        "4,10",
+        "4,11",
+        {
+          "c": "#aaaaaa",
+          "w": 2.75
+        },
+        "4,13",
+        {
+          "x": 1.25,
+          "c": "#777777"
+        },
+        "4,16",
+        {
+          "x": 1.25,
+          "c": "#cccccc"
+        },
+        "4,18",
+        "4,19",
+        "4,20",
+        {
+          "c": "#777777",
+          "h": 2
+        },
+        "4,21"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.25
+        },
+        "5,0",
+        {
+          "w": 1.25
+        },
+        "5,1",
+        {
+          "w": 1.25
+        },
+        "5,3",
+        {
+          "c": "#cccccc",
+          "w": 6.25
+        },
+        "5,6",
+        {
+          "c": "#aaaaaa",
+          "w": 1.25
+        },
+        "5,10",
+        {
+          "w": 1.25
+        },
+        "5,11",
+        {
+          "w": 1.25
+        },
+        "5,12",
+        {
+          "w": 1.25
+        },
+        "5,14",
+        {
+          "x": 0.25,
+          "c": "#777777"
+        },
+        "5,15",
+        "5,16",
+        "5,17",
+        {
+          "x": 0.25,
+          "c": "#cccccc",
+          "w": 2
+        },
+        "5,18",
+        "5,20"
+      ]
+    ]
+  }
+}
